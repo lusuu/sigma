@@ -1,0 +1,218 @@
+/* Sidebar */
+.sidebar {
+	width: 370px;
+	margin-left: -370px;
+	float: right;
+	background: #f8f8f8;
+	padding: 28px 36px 20px 20px;
+	font-size: 18px;
+	color: #646464;
+	border-radius: 0 0 40px 0;
+	font-family: 'AvenirLTStd-Light';
+
+	@media @desktop-xl {
+		width: 320px;
+		margin-left: -320px;
+	}
+
+	@media @tablet {
+		width: 100%;
+		max-width: 800px;
+		margin: 0 auto;
+		float: none;
+		overflow: hidden;
+	}
+
+	.acute-angles {
+		@media @tablet {
+			border-radius: 0;
+		}
+	}
+
+	@media @mobile {
+		max-width: none;
+	}
+
+  	a {
+  		color: #646464;
+  	}
+
+	.sidebar-box {
+		margin: 0 0 23px;
+
+		&.with-search {
+
+			.title {
+				margin: 0 0 6px;
+			}
+		}
+	}
+
+	&.orange-sidebar {
+
+		.title {
+			color: #f39000;
+		}
+	}
+
+	.title {
+		color: #4a257d;
+		margin: 0 0 14px;
+		font-family: 'AvenirLTStd-Medium';
+		font-size: 18px;
+	}
+
+	.reports-list {
+		.listreset;
+
+		li {
+			border-bottom: solid 1px #ebebeb;
+			padding: 13px 0;
+
+			&:first-child {
+				border-top: solid 1px #ebebeb;
+			}
+		}
+
+		a {
+
+			&:hover {
+				color: #f39000;
+			}
+		}
+
+		.link-icon {
+			color: #f39000;
+			width: 30px;
+			padding: 0 5px;
+			float: left;
+		}
+
+		.link-text {
+			overflow: hidden;
+		}
+	}
+
+	.text {
+		margin: 0 0 13px;
+	}
+
+	.search-box {
+
+		@media @tablet {
+			width: 50%;
+		}
+
+		@media @mobile {
+			width: 100%;
+		}
+
+		.search {
+			overflow: hidden;
+			width: calc(~"100% - 50px");
+			border: solid 1px #b4b4b4;
+			background: #fff;
+			border-radius: 20px;
+			padding: 10px 15px;
+			color: #a9a9a9;
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		.btn {
+			float: right;
+		}
+	}
+
+	.sidebar-list {
+		.listreset;
+
+		li {
+			border-bottom: solid 1px #ebebeb;
+			padding: 13px 0 12px;
+
+			&:first-child {
+				border-top: solid 1px #ebebeb;
+			}
+
+			&.active {
+				a {
+					color: #000;
+				}
+			}
+		}
+
+		a {
+			&:hover {
+				color: #000;
+			}
+		}
+	}
+
+	.categories-list {
+
+		.amount {
+
+			&:before {
+				content: '(';
+			}
+
+			&:after {
+				content: ')';
+			}
+		}
+	}
+
+	.investor-list {
+		.listreset;
+
+		li {
+			border-bottom: solid 1px #ebebeb;
+			padding: 13px 0 12px;
+
+			&:first-child {
+				border-top: solid 1px #ebebeb;
+			}
+		}
+
+		a {
+			&:hover {
+				color: #000;
+			}
+		}
+	}
+
+	.toolkit-list {
+		.listreset;
+
+		li {
+			padding: 0 0 15px;
+
+			&:last-child {
+				padding: 0;
+			}
+		}
+
+		a {
+
+			&:hover {
+				color: #f39000;
+			}
+
+		}
+
+		.link-icon {
+			box-sizing: content-box;
+			color: #f39000;
+			width: 30px;
+			padding: 0 3px 0 5px;
+			float: left;
+		}
+
+		.link-text {
+			overflow: hidden;
+		}
+	}
+}

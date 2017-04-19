@@ -1,0 +1,208 @@
+/* Why Join Page */
+.why-join-main-text {
+	padding: 0 0 230px;
+
+	@media @tablet {
+		padding: 0;
+	}
+}
+
+/* Our Programs */
+.our-programs-section {
+	background: #f9f8fb;
+	padding: 30px 0 60px;
+}
+
+.programs {
+	.inline-block-space-parent;
+	text-align: center;
+	margin: -260px -20px 0;
+
+	@media @tablet {
+		margin: 0 -15px;
+	}
+
+	a {
+		display: block;
+		border-radius: 40px 0 40px 0;
+		overflow: hidden;
+		box-shadow: 4px 4px 10px -3px #dedede;
+		color: #646464;
+		transition: opacity ease .3s;
+		max-width: 360px;
+		margin: 0 auto;
+
+		&:hover {
+			opacity: .9;
+		}
+	}
+
+	.logo-box {
+		height: 215px;
+		display: table;
+		width: 100%;
+		table-layout: fixed;
+		font-size: 18px;
+		color: #fff;
+		padding: 15px;
+
+		.holder {
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		.logo {
+			margin: 0 0 10px;
+			height: 90px;
+			line-height: 90px;
+
+			img {
+				vertical-align: middle;
+				max-height: 90px;
+			}
+		}
+
+		.title {
+			padding-top: 10px;
+		}
+	}
+
+	.text-box {
+		display: table;
+		width: 100%;
+		table-layout: fixed;
+		font-size: 16px;
+		line-height: 1.4;
+		height: 195px;
+		background: #fff;
+		padding: 10px 20px;
+
+		.holder {
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		.text {
+			margin: 0 0 15px;
+		}
+
+		.btn {
+
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+}
+
+
+.program-box {
+	.inline-block-space-child;
+	width: 33.3%;
+	padding: 15px 20px;
+
+	@media @tablet {
+		width: 50%;
+	}
+
+	@media @mobile {
+		width: 100%;
+	}
+
+	&:nth-child(1n) {
+
+		.logo-box {
+			background: #828282;
+		}
+
+		.btn {
+			border-color: #828282;
+			color: #828282;
+
+			&:hover {
+				background: #828282;
+			}
+		}
+	}
+
+	&:nth-child(2n) {
+
+		.logo-box {
+			background: #4a257d;
+		}
+
+		.btn {
+			border-color: #4a257d;
+			color: #4a257d;
+
+			&:hover {
+				background: #4a257d;
+			}
+		}
+	}
+
+	&:nth-child(3n) {
+
+		.logo-box {
+			background: #f39000;
+		}
+
+		.btn {
+			border-color: #f39000;
+			color: #f39000;
+
+			&:hover {
+				background: #f39000;
+			}
+		}
+	}
+
+	&:nth-child(4n) {
+
+		.logo-box {
+			background: #321850;
+		}
+
+		.btn {
+			border-color: #321850;
+			color: #321850;
+
+			&:hover {
+				background: #321850;
+			}
+		}
+	}
+
+
+	&:nth-child(5n) {
+
+		.logo-box {
+			background: #e66208;
+		}
+
+		.btn {
+			border-color: #e66208;
+			color: #e66208;
+
+			&:hover {
+				background: #e66208;
+			}
+		}
+	}
+
+	&:nth-child(6n) {
+
+		.logo-box {
+			background: #333333;
+		}
+
+		.btn {
+			border-color: #333333;
+			color: #333333;
+
+			&:hover {
+				background: #333333;
+			}
+		}
+	}
+}

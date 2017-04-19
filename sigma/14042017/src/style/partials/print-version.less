@@ -1,0 +1,414 @@
+/* Print Version */
+@media print {
+
+	/* Base */
+	header, 
+	footer { 
+		display: none; 
+	}
+
+	* {
+		background-image: none;
+		background-color: none;
+		box-shadow: none !important;
+		color: #000;
+	}
+
+	.breadcrumbs {
+		display: none; 
+	}
+
+	.page-title {
+		display: none;
+	}
+
+	.contacts-section {
+		display: none;
+	}
+
+	.footer-connect {
+		display: none;
+	}
+
+	.footer-sitemap {
+		display: none;
+	}
+
+	.content-with-sidebar {
+		margin-right: 0;
+		padding: 0;
+	}
+
+	.sidebar {
+		margin-left: 0;
+		float: left;
+		width: 100%;
+		padding: 0;
+	}
+
+	.btn {
+		display: none;
+	}
+
+	a[href^=http]:after {
+		content:"<" attr(href) ">";
+		padding: 0 0 0 10px;
+	}
+
+	.circle-list {
+		li {
+			padding: 0;
+
+			&:before {
+				display: none;
+			}
+		}
+	}
+
+	.main {
+		margin-top: 0;
+		padding: 0;
+	}
+
+	.content-text {
+		max-width: none;
+	}
+
+	.small-content-text {
+		.main-text {
+			max-width: none;
+			margin: 0 0 10px;
+		}
+	}
+
+	/* Home */
+	.home-slider {
+		display: none;
+	}
+
+	.retail-brands-slider-section {
+		display: none;
+	}
+
+	.quote-section {
+		.main-holder {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+
+		.title {
+			margin: 0 0 10px;
+			font-size: 22px;
+		}
+
+		.quote-box {
+			padding: 0;
+
+			.text {
+				font-size: 16px;
+				text-align: left;
+			}
+		}
+
+		.author {
+			font-size: 15px;
+		}
+
+		.image {
+			display: none;
+		}
+	}
+
+	.investor-center-section {
+		padding: 10px 0;
+
+		.title {
+			font-size: 22px;
+			margin: 0 0 10px;
+		}
+
+		.text-col {
+			width: 100%;
+			float: none;
+
+			.text {
+				max-width: none;
+				font-size: 16px;
+			}
+		}
+
+		.price-col {
+			display: none;
+		}
+	}
+
+	.sigma-info-section {
+		padding: 0;
+		margin: 0;
+
+		.sigma-logo {
+			display: none;
+		}
+
+		.title {
+			font-size: 22px;
+			margin: 0 0 10px;
+		}
+
+		.text {
+			max-width: none;
+			font-size: 16px;
+			text-align: left;
+		}
+	}
+
+	.latest-news-section {
+
+		.title {
+			margin: 0;
+		}
+
+		.latest-news-box {
+			width: 100%;
+		}
+
+		.image {
+			display: none;
+		}
+
+		.text {
+
+			a {
+				display: none;
+			}
+		}
+	}
+
+	/* Amcal */
+	.main-banner {
+		display: none;
+	}
+
+	.connect-amcal {
+		display: none;
+	}
+
+	.back-btn-box {
+		display: none;
+	}
+
+	/* Contact Us */
+	.about-me {
+		display: none;
+	}
+
+	.about-us-main-text {
+		padding: 0 0 10px;
+	}
+
+	.what-you-need {
+		display: none;
+	}
+
+	.contacts-form-section {
+		display: none;
+	}
+
+	/* Distribution Centres */
+	.search-supply-section {
+		display: none;
+	}
+
+	.search-results-map-section {
+		display: none;
+	}
+
+	.search-results-section {
+		.title {
+			margin: 0 0 10px;
+		}
+	}
+
+	.table-results {
+		.cell-results {
+			padding: 20px;
+
+			&.cell-address {
+				padding-right: 20px;
+			}
+		}
+	}
+
+	/* Investor Dashboard */
+	.orange-sidebar {
+		display: none;
+	}
+
+	.page-subtitle {
+		&.center {
+    		margin: 0 auto;
+		}
+	}
+
+	.content-box {
+		margin: 0;
+		padding: 21px 25px 0;
+
+		.quote-box {
+			.main-number {
+				font-size: 30px;
+			}
+		}
+
+		.chart-box {
+			margin: 0;
+		}
+
+		.title {
+			margin: 0 0 10px;
+		}
+	}
+
+	/* Investor Relations */
+	.content-text {
+		img {
+			display: none;
+		}
+	}
+
+	/* News Insight */
+	.news-insight-main {
+		.sidebar {
+			display: none;
+		}
+	}
+
+	.news-insight-box {
+
+		.image-box {
+			display: none;
+		}
+	}
+
+	.news-insight-open-main {
+		.sidebar {
+			display: none;
+		}
+	}
+
+	/* Our History */
+	.history-years-slider {
+		display: none;
+	}
+
+	.history-info-block-left {
+		padding-right: 10px;
+
+		.history-info-box {
+			margin: 0 0 10px;
+		}
+	}
+
+	.history-info-block-right {
+		padding-left: 10px;
+
+		.history-info-box {
+			margin: 0 0 10px;
+		}
+	}
+
+	.history-info-section {
+		margin: 0;
+
+		.date-title {
+			max-width: none;
+			margin: 0 0 10px;
+		}
+	}
+
+	.history-info-box {
+
+		&:before {
+			display: none;
+		}
+
+		&:after {
+			display: none;
+		}
+
+		.image-box {
+			display: none;
+		}
+
+		.text-box {
+			border-radius: 40px 0 40px 0;
+		}
+	}
+
+	/* Our Services */
+	.services {
+		.img {
+			display: none;
+		}
+
+		.text {
+			margin: 0;
+		}
+	}
+
+	/* Pr Media */
+	.widget-container {
+		display: none;
+	}
+
+	/* Retail Brands */
+	.retail-brand {
+		vertical-align: top;
+
+		.logo-box {
+			display: none;
+		}
+	}
+
+	/* Social Responsibility */
+	.social-responsibility {
+		.sidebar {
+			display: none;
+		}
+	}
+	
+	/* Who We Are */
+	.who-we-are-main-text {
+		.image {
+			display: none;
+		}
+	}
+
+	/* Why Join */
+
+	.why-join-main-text {
+		padding: 0;
+	}
+
+	.program-box {
+		width: 100%;
+		padding: 0;
+	}
+
+	.programs {
+		margin-top: 0;
+
+		.logo-box {
+			color: #000;
+			height: auto;
+
+			.logo {
+				display: none;
+			}
+		}
+
+		.text-box {
+			height: auto;
+		}
+	}
+}
