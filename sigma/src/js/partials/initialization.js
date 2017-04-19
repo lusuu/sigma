@@ -18,9 +18,8 @@ $(document).ready(function(){
     ]
   });
 
-
   $('.history-years-slider').slick({
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     slidesToShow: 8, 
     slidesToScroll: 1,
@@ -34,7 +33,7 @@ $(document).ready(function(){
           arrows: false
         }
       }, 
-      { breakpoint: 768,
+      { breakpoint: 680,
         settings: {
           autoplaySpeed: 3000,
           slidesToShow: 3,

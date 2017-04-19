@@ -14,7 +14,7 @@
 /* Footer Sitemap */
 .footer-sitemap {
 	background: #ebebeb;
-	padding: 26px 0 19px;
+	padding: 26px 0 5px;
 	font-size: 13px;
 	font-family: 'AvenirLTStd-Heavy';
 
@@ -70,35 +70,21 @@
 
 	/* Sitemap */
 	.sitemap { 
-		max-width: 90%;
+		max-width: 95%;
 		margin: 0 auto;
-		overflow: hidden;
-		max-height: 20px;
-		overflow: hidden;
-		transition: max-height ease 0.3s;
-
-		@media @mobile {
-			margin: 0 auto;
-			max-height: 2000px;
-		}
-
-		&.active {
-			max-height: 2000px;
-		}
 	}
 
 	/* Sitemap List */
 	.sitemap-list {
 		.listreset;
-		display: table;
-		width: 100%;
 		text-align: center;
 
 		& > li {
-			display: table-cell;
 			vertical-align: top;
-			padding: 0 5px;
+			display: inline-block;
+			padding: 0 20px;
 			font-weight: bold;
+			margin-bottom: 20px;
 
 			@media @tablet {
 				font-size: 12px;
@@ -124,7 +110,10 @@
 	.inside-sitemap-list {
 		.listreset;
 		font-family: 'AvenirLTStd-Light';
-		padding: 20px 0 0;
+		padding: 0;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height ease 0.3s;
 
 		@media @mobile {
 			display: none;
@@ -151,6 +140,10 @@
 			@media @mobile {
 				margin: 0;
 				padding: 24px 0 0;
+			}
+
+			&:first-child {
+				padding: 20px 0 0;
 			}
 		}
 

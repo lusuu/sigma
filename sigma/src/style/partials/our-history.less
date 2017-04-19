@@ -1,15 +1,31 @@
 /* Our History */
-.history-years-section {
+.history-years-slider-section {
+	padding:88px 0 138px;
 
+	@media @tablet {
+		padding: 0 0 40px;
+	}
+
+	&.active {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		background: #fff;
+		opacity: 0.7;
+		padding: 10px;
+		z-index: 6;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
 }
 
 .history-years-slider {
 	max-width: 930px;
-	margin: 88px auto 138px;
-
-	@media @tablet {
-		margin: 0 auto 40px;
-	}
+	margin: 0 auto;
+	text-align: center;
 	
 	.slide {
 		padding: 0 15px;
